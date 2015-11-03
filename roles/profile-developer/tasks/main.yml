@@ -19,7 +19,6 @@
   homebrew_cask: name={{item}} state=present
   with_items:
     - imageoptim
-    - phpstorm
     - sequel-pro
     - java6
     - java7
