@@ -115,7 +115,7 @@
         - mongodb
         - mutt
         - nettle
-        - nginx-full
+        - nginx
         - node
         - openssl
         - ossp-uuid
