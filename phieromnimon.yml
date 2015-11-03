@@ -1,0 +1,190 @@
+---
+
+- hosts: 127.0.0.1
+  connection: local
+
+  tasks:
+    - name: install personal cask applications
+      homebrew_cask: name={{item}} state=present
+      with_items:
+        - xquartz
+        - angry-ip-scanner
+        - blender
+        - dockertoolbox
+        - chefdk
+        - dia
+        - dterm
+        - firefox
+        - github
+        - google-chrome-canary
+        - google-chrome
+        - hex-fiend
+        - hipchat
+        - iterm2
+        - kismac
+        - macfusion
+        - mongohub
+        - pandora
+        - rowanj-gitx
+        - slack
+        - seashore
+        - sequel-pro
+        - seil
+        - shiftit
+        - soundflower
+        - sourcetree
+        - sqlitebrowser
+        - skype
+        - textmate
+        - transmission
+        - unrarx
+        - vlc
+        - wireshark
+    - name: install phieromnimon brew applications
+      homebrew: name={{item}} state=latest
+      with_items:
+        - android-sdk
+        - ant
+        - arping
+        - atk
+        - autoconf
+        - automake
+        - brew-cask
+        - cassandra
+        - cmake
+        - coreutils
+        - ddrescue
+        - elasticsearch
+        - elixir
+        - erlang
+        - findutils
+        - fontconfig
+        - fping
+        - freetype
+        - gawk
+        - gdbm
+        - gdk-pixbuf
+        - geoip
+        - gettext
+        - git
+        - git-extras
+        - git-flow
+        - giter8
+        - glib
+        - gmp
+        - gnu-getopt
+        - gnu-indent
+        - gnu-sed
+        - gnu-tar
+        - gnupg
+        - gnutls
+        - gobject-introspection
+        - graphviz
+        - gtk+
+        - gtksourceview
+        - harfbuzz
+        - headers-more-nginx-module
+        - htop-osx
+        - hub
+        - icu4c
+        - iftop
+        - imagemagick
+        - intltool
+        - jmeter
+        - jpeg
+        - lame
+        - leiningen
+        - lftp
+        - libevent
+        - libffi
+        - libgpg-error
+        - libksba
+        - libnet
+        - libpng
+        - libsodium
+        - libtasn1
+        - libtiff
+        - libtool
+        - libyaml
+        - little-cms
+        - lua
+        - lzip
+        - mad
+        - memcached
+        - mercurial
+        - mongodb
+        - mutt
+        - nettle
+        - nginx-full
+        - node
+        - openssl
+        - ossp-uuid
+        - pango
+        - pbzip2
+        - pcre
+        - pixman
+        - pkg-config
+        - postgresql
+        - pstree
+        - pv
+        - py2cairo
+        - pygobject
+        - pygtk
+        - pygtksourceview
+        - python
+        - python3
+        - rabbitmq
+        - rarian
+        - readline
+        - redis
+        - rename
+        - rhino
+        - sbt
+        - scala
+        - selenium-server-standalone
+        - shmux
+        - sox
+        - sqlite
+        - squid
+        - tmux
+        - tokyo-cabinet
+        - tree
+        - typesafe-activator
+        - unixodbc
+        - watch
+        - wget
+        - wxmac
+        - xz
+        - zeromq
+    - name: install phieromnimon npm applications
+      npm: name={{item}} state=latest global=yes
+      with_items:
+        - autoprefixer
+        - bower
+        - express
+        - grunt
+        - gulp
+        - grunt-cli
+        - generator-angular
+        - generator-cordova
+        - generator-express-react
+        - generator-reactjs
+        - generator-node
+        - generator-react-webpack
+        - jasmine-node
+        - karma
+        - mocha
+        - ngrok
+        - ios-sim
+        - phantomjs
+        - protractor
+        - readable-stream
+        - yo
+
+  roles:
+    - profile-gopro
+
+  vars:
+    - computername: mbr-27484
+    - git_user_name: pavlos
+    - git_user_email: paul.hieromnimon@gmail.com
