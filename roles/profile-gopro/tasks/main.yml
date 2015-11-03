@@ -8,8 +8,6 @@
     - dockertoolbox
     - firefox
     - iterm2
-    - mou
-    - sublime-text
     - shiftit
 
 - name: install developer brew applications
