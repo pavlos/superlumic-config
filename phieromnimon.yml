@@ -81,7 +81,6 @@
         - gtk+
         - gtksourceview
         - harfbuzz
-        - headers-more-nginx-module
         - htop-osx
         - hub
         - icu4c
